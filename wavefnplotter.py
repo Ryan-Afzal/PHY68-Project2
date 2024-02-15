@@ -20,5 +20,6 @@ def plot(plotId, psi, V, x0, xf, dx):
 		VArray[i] = V(xArray[i])
 		psiArray[i] = psi(xArray[i])
 	
+	
 
 	pass
