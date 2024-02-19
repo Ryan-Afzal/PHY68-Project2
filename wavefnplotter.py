@@ -3,18 +3,14 @@ import numpy as np
 
 plt.ioff()
 fig = plt.figure(figsize=(10, 20), layout='constrained')
-plots = fig.subplot_mosaic([["psiPlot1", "psiPlot1"],
-                            ["psiPlot1", "psiPlot1"]])
+plots = fig.subplot_mosaic([["psiPlot1"]])
 
 plots["psiPlot1"].set_title("Placeholder Title")
 plots["psiPlot1"].set_xlabel("Position (*units*)")
 plots["psiPlot1"].set_ylabel("Y-axis title")
-plots["psiPlot1"].set_ylim(0, 10)
 
 def plot(psi, V, x0, xf, dx):
-	plot("psiPlot1", psi, V, x0, xf, dx)
-
-def plot(plotId, psi, V, x0, xf, dx):
+	plotId = "psiPlot1"
 	xArray = np.arange(x0, xf, dx)
 	nsteps = len(xArray)
 	VArray = np.zeros(nsteps)
