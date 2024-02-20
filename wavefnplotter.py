@@ -6,7 +6,7 @@ import numpy as np
 def plot(psi, V, x0, xf, dx):
 	plt.clf()
 	plt.ioff()
-	fig = plt.figure(figsize=(10, 20), layout='constrained')
+	fig = plt.figure(figsize=(8, 4), layout='constrained')
 	plots = fig.subplot_mosaic([["psiPlot1"]])
 
 	plotId = "psiPlot1"
